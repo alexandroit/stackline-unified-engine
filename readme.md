@@ -1,3 +1,11 @@
+# @stackline/unified-engine
+
+Maintained MIT-licensed fork of `unified-engine@10.1.0`, retaining its callback API and unified 10 / vfile 5 type model. Requires Node.js 20.19+ on the 20.x line, or Node.js 22.12+.
+
+The file finder uses glob 13 with brace-aware magic detection and a Promise-to-callback bridge. `@stackline/load-plugin` removes obsolete glob/inflight dependencies from the plugin-resolution path while preserving the original options.
+
+Development: `npm ci`, `npm run build`, `npm test`, `npm run lint`. `npm run build` validates the preserved published declarations with modern TypeScript; it does not regenerate unrelated legacy JSDoc. See [UPSTREAM-TYPES.md](UPSTREAM-TYPES.md). Tests include the upstream integration suite and focused glob regressions.
+
 # unified-engine
 
 [![Build][build-badge]][build]
@@ -51,10 +59,10 @@ You can use this to make such things.
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 14.14+ or 16.0+), install with [npm][]:
+In Node.js (20.19+ on the 20.x line, or 22.12+), install with [npm][]:
 
 ```sh
-npm install unified-engine
+npm install @stackline/unified-engine
 ```
 
 ## Use
@@ -69,7 +77,7 @@ files, and more.
  * @typedef {import('unified-engine').Callback} Callback
  */
 
-import {engine} from 'unified-engine'
+import {engine} from '@stackline/unified-engine'
 import {remark} from 'remark'
 
 engine(
@@ -231,10 +239,8 @@ It additionally exports the following types:
 
 ## Compatibility
 
-Projects maintained by the unified collective are compatible with all maintained
-versions of Node.js.
-As of now, that is Node.js 14.14+ or 16.0+.
-Our projects sometimes work with older versions, but this is not guaranteed.
+This fork supports Node.js 20.19+ on the 20.x line, and Node.js 22.12+.
+The callback API and unified 10 / vfile 5 type model are preserved.
 
 ## Security
 

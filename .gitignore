@@ -6,3 +6,15 @@ coverage/
 *.d.cts
 *.log
 yarn.lock
+
+*.tgz
+.env
+.env.*
+
+!/index.d.ts
+!lib/**/*.d.ts
+
+*.tsbuildinfo
+
+node_modules/
+artifact/
