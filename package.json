@@ -1,18 +1,25 @@
 {
   "name": "@stackline/unified-engine",
-  "version": "1.0.0",
-  "description": "Engine to process multiple files with unified",
+  "version": "1.0.1",
+  "description": "Process files with unified plugins, configuration, and ignore rules using the unified-engine 10 callback API",
   "license": "MIT",
   "keywords": [
+    "stackline",
     "unified",
     "processor",
-    "engine"
+    "engine",
+    "plugins",
+    "markdown",
+    "configuration",
+    "glob"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexandroit/stackline-unified-engine.git"
   },
-  "bugs": "https://github.com/alexandroit/stackline-unified-engine/issues",
+  "bugs": {
+    "url": "https://github.com/alexandroit/stackline-unified-engine/issues"
+  },
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
   "funding": {
     "type": "opencollective",

@@ -1,41 +1,30 @@
 # @stackline/unified-engine
 
+> Process files with unified plugins, configuration, and ignore rules using the unified-engine 10 callback API.
+
+[![npm version](https://img.shields.io/npm/v/@stackline/unified-engine.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/unified-engine)
+[![license](https://img.shields.io/npm/l/@stackline/unified-engine.svg?style=flat-square)](https://github.com/alexandroit/stackline-unified-engine/blob/main/license)
+[![GitHub repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-unified-engine)
+
+**[Documentation](https://github.com/alexandroit/stackline-unified-engine#readme)** |
+**[npm](https://www.npmjs.com/package/@stackline/unified-engine)** |
+**[Issues](https://github.com/alexandroit/stackline-unified-engine/issues)** |
+**[Repository](https://github.com/alexandroit/stackline-unified-engine)**
+
+**Package version:** `1.0.1`
+
+## Why this package?
+
 Maintained MIT-licensed fork of `unified-engine@10.1.0`, retaining its callback API and unified 10 / vfile 5 type model. Requires Node.js 20.19+ on the 20.x line, or Node.js 22.12+.
 
 The file finder uses glob 13 with brace-aware magic detection and a Promise-to-callback bridge. `@stackline/load-plugin` removes obsolete glob/inflight dependencies from the plugin-resolution path while preserving the original options.
 
-Development: `npm ci`, `npm run build`, `npm test`, `npm run lint`. `npm run build` validates the preserved published declarations with modern TypeScript; it does not regenerate unrelated legacy JSDoc. See [UPSTREAM-TYPES.md](UPSTREAM-TYPES.md). Tests include the upstream integration suite and focused glob regressions.
-
-# unified-engine
-
-[![Build][build-badge]][build]
-[![Coverage][coverage-badge]][coverage]
-[![Downloads][downloads-badge]][downloads]
-[![Sponsors][sponsors-badge]][collective]
-[![Backers][backers-badge]][collective]
-[![Chat][chat-badge]][chat]
+Development: `npm ci`, `npm run build`, `npm test`, `npm run lint`. `npm run build` validates the preserved published declarations with modern TypeScript; it does not regenerate unrelated legacy JSDoc. See [UPSTREAM-TYPES.md](https://github.com/alexandroit/stackline-unified-engine/blob/main/UPSTREAM-TYPES.md). Tests include the upstream integration suite and focused glob regressions.
 
 **[unified][]** engine to process multiple files, lettings users [configure][]
 from the file system.
 
-## Contents
-
-*   [What is this?](#what-is-this)
-*   [When should I use this?](#when-should-i-use-this)
-*   [Install](#install)
-*   [Use](#use)
-*   [API](#api)
-    *   [`engine(options, callback)`](#engineoptions-callback)
-*   [Plugins](#plugins)
-*   [Configuration](#configuration)
-*   [Ignoring](#ignoring)
-*   [Types](#types)
-*   [Compatibility](#compatibility)
-*   [Security](#security)
-*   [Contribute](#contribute)
-*   [License](#license)
-
-## What is this?
+### What is this?
 
 This package is the engine.
 It’s what you use underneath when you use [`remark-cli`][remark-cli] or a
@@ -43,7 +32,7 @@ language server.
 Compared to unified, this deals with multiple files, often from the file
 system, and with configuration files and ignore files.
 
-## When should I use this?
+### When should I use this?
 
 You typically use something that wraps this, such as:
 
@@ -56,7 +45,26 @@ You typically use something that wraps this, such as:
 
 You can use this to make such things.
 
-## Install
+## Compatibility
+
+| Item | Value |
+| --- | --- |
+| Package | `@stackline/unified-engine@1.0.1` |
+| Supported Node.js | `^20.19.0 || >=22.12.0` |
+| Module entry | `index.js` (ES modules) |
+| Runtime dependencies | 22 direct dependencies |
+| Types | `index.d.ts` |
+
+This fork supports Node.js 20.19+ on the 20.x line, and Node.js 22.12+.
+The callback API and unified 10 / vfile 5 type model are preserved.
+
+## Installation
+
+```bash
+npm install @stackline/unified-engine
+```
+
+<a id="install"></a>
 
 This package is [ESM only][esm].
 In Node.js (20.19+ on the 20.x line, or 22.12+), install with [npm][]:
@@ -65,7 +73,9 @@ In Node.js (20.19+ on the 20.x line, or 22.12+), install with [npm][]:
 npm install @stackline/unified-engine
 ```
 
-## Use
+## Usage
+
+<a id="use"></a>
 
 The following example processes all files in the current directory with a
 markdown extension with **[remark][]**, allows [configuration][configure]
@@ -100,7 +110,19 @@ function done(error) {
 }
 ```
 
-## API
+## Security
+
+Plugins and JavaScript configuration can execute code. Review the existing security guidance before processing an untrusted project.
+
+`unified-engine` loads and evaluates configuration files, plugins, and presets
+from the file system (often from `node_modules/`).
+That means code that is on your file system runs.
+Make sure you trust the workspace where you run `unified-engine` and be careful
+with packages from npm and changes made by contributors.
+
+## API Surface
+
+<a id="api"></a>
 
 This package exports the identifier `engine`.
 There is no default export.
@@ -206,21 +228,21 @@ developer), or a status code and the processing context.
 *   `context` (`Object`) — processing context, containing internally used
     information and a `files` array with the processed files
 
-## Plugins
+### Plugins
 
 [`doc/plugins.md`][plugins] describes in detail how plugins can add more files
 to be processed and handle all transformed files.
 
-## Configuration
+### Configuration
 
 [`doc/configure.md`][configure] describes in detail how configuration files
 work.
 
-## Ignoring
+### Ignoring
 
 [`doc/ignore.md`][ignore] describes in detail how ignore files work.
 
-## Types
+### Types
 
 This package is fully typed with [TypeScript][].
 It additionally exports the following types:
@@ -237,20 +259,21 @@ It additionally exports the following types:
 *   `Context` — models the third parameter to `callback`
 *   `Callback` — models the signature of `callback`
 
-## Compatibility
+## Local Development
 
-This fork supports Node.js 20.19+ on the 20.x line, and Node.js 22.12+.
-The callback API and unified 10 / vfile 5 type model are preserved.
+Clone the [repository](https://github.com/alexandroit/stackline-unified-engine) and run the following commands from its root:
 
-## Security
+```bash
+npm ci
+npm run build
+npm test
+npm run lint
+npm run test:types
+```
 
-`unified-engine` loads and evaluates configuration files, plugins, and presets
-from the file system (often from `node_modules/`).
-That means code that is on your file system runs.
-Make sure you trust the workspace where you run `unified-engine` and be careful
-with packages from npm and changes made by contributors.
+The retained upstream development notes below include historical tooling; the commands above are the maintained package checks.
 
-## Contribute
+### Contribute
 
 See [`contributing.md`][contributing] in [`unifiedjs/.github`][health] for ways
 to get started.
@@ -260,7 +283,25 @@ This project has a [code of conduct][coc].
 By interacting with this repository, organization, or community you agree to
 abide by its terms.
 
+## Release Checklist
+
+1. Update the package version, lockfile, generated version fields, and changelog together.
+2. Run the development checks above and audit both `npm audit` and `npm audit --omit=dev`.
+3. Use the [GitHub publish workflow](https://github.com/alexandroit/stackline-unified-engine/actions/workflows/publish.yml) with its `Prod` environment to publish the exact CI tarball.
+4. Verify public npm bytes, package identity, provenance, and the immutable GitHub release evidence.
+
+## Community and Support
+
+Report reproducible package issues in the [issue tracker](https://github.com/alexandroit/stackline-unified-engine/issues).
+
+- [Stackline / Alexandro.Net](https://alexandro.net/)
+- [GitHub](https://github.com/alexandroit)
+- [Maintainer LinkedIn](https://www.linkedin.com/in/aleinfo/)
+- [Reddit community: r/Stackline](https://www.reddit.com/r/Stackline/)
+
 ## License
+
+[MIT](https://github.com/alexandroit/stackline-unified-engine/blob/main/license). Original copyright notices and upstream attribution are retained.
 
 [MIT][license] © [Titus Wormer][author]
 
@@ -403,3 +444,5 @@ abide by its terms.
 [args]: https://github.com/unifiedjs/unified-args
 
 [remark-cli]: https://github.com/remarkjs/remark/tree/main/packages/remark-cli#readme
+
+See [NOTICE](https://github.com/alexandroit/stackline-unified-engine/blob/main/NOTICE) for retained attribution.
