@@ -357,85 +357,85 @@ Report reproducible package issues in the [issue tracker](https://github.com/ale
 
 [callback]: #function-callbackerror-code-context
 
-[options]: doc/options.md#options
+[options]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#options
 
-[processor]: doc/options.md#optionsprocessor
+[processor]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsprocessor
 
-[cwd]: doc/options.md#optionscwd
+[cwd]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionscwd
 
-[extensions]: doc/options.md#optionsextensions
+[extensions]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsextensions
 
-[stream-in]: doc/options.md#optionsstreamin
+[stream-in]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsstreamin
 
-[file-path]: doc/options.md#optionsfilepath
+[file-path]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsfilepath
 
-[stream-out]: doc/options.md#optionsstreamout
+[stream-out]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsstreamout
 
-[stream-error]: doc/options.md#optionsstreamerror
+[stream-error]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsstreamerror
 
-[out]: doc/options.md#optionsout
+[out]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsout
 
-[output]: doc/options.md#optionsoutput
+[output]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsoutput
 
-[always-stringify]: doc/options.md#optionsalwaysstringify
+[always-stringify]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsalwaysstringify
 
-[tree]: doc/options.md#optionstree
+[tree]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionstree
 
-[tree-in]: doc/options.md#optionstreein
+[tree-in]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionstreein
 
-[tree-out]: doc/options.md#optionstreeout
+[tree-out]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionstreeout
 
-[inspect]: doc/options.md#optionsinspect
+[inspect]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsinspect
 
-[detect-config]: doc/options.md#optionsdetectconfig
+[detect-config]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsdetectconfig
 
-[rc-name]: doc/options.md#optionsrcname
+[rc-name]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsrcname
 
-[package-field]: doc/options.md#optionspackagefield
+[package-field]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionspackagefield
 
-[rc-path]: doc/options.md#optionsrcpath
+[rc-path]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsrcpath
 
-[settings]: doc/options.md#optionssettings
+[settings]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionssettings
 
-[detect-ignore]: doc/options.md#optionsdetectignore
+[detect-ignore]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsdetectignore
 
-[ignore-name]: doc/options.md#optionsignorename
+[ignore-name]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsignorename
 
-[ignore-path]: doc/options.md#optionsignorepath
+[ignore-path]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsignorepath
 
-[ignore-path-resolve-from]: doc/options.md#optionsignorepathresolvefrom
+[ignore-path-resolve-from]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsignorepathresolvefrom
 
-[ignore-patterns]: doc/options.md#optionsignorepatterns
+[ignore-patterns]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsignorepatterns
 
-[ignore-unconfigured]: doc/options.md#optionsignoreunconfigured
+[ignore-unconfigured]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsignoreunconfigured
 
-[silently-ignore]: doc/options.md#optionssilentlyignore
+[silently-ignore]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionssilentlyignore
 
-[plugin-prefix]: doc/options.md#optionspluginprefix
+[plugin-prefix]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionspluginprefix
 
-[config-transform]: doc/options.md#optionsconfigtransform
+[config-transform]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsconfigtransform
 
-[options-plugins]: doc/options.md#optionsplugins
+[options-plugins]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsplugins
 
-[reporter]: doc/options.md#optionsreporter
+[reporter]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsreporter
 
-[reporteroptions]: doc/options.md#optionsreporteroptions
+[reporteroptions]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsreporteroptions
 
-[color]: doc/options.md#optionscolor
+[color]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionscolor
 
-[silent]: doc/options.md#optionssilent
+[silent]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionssilent
 
-[quiet]: doc/options.md#optionsquiet
+[quiet]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsquiet
 
-[frail]: doc/options.md#optionsfrail
+[frail]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsfrail
 
-[files]: doc/options.md#optionsfiles
+[files]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/options.md#optionsfiles
 
-[configure]: doc/configure.md
+[configure]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/configure.md
 
-[ignore]: doc/ignore.md
+[ignore]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/ignore.md
 
-[plugins]: doc/plugins.md
+[plugins]: https://github.com/alexandroit/stackline-unified-engine/blob/main/doc/plugins.md
 
 [gulp]: https://github.com/unifiedjs/unified-engine-gulp
 
