@@ -1,10 +1,14 @@
 {
   "name": "@stackline/unified-engine",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Process files with unified plugins, configuration, and ignore rules using the unified-engine 10 callback API",
   "license": "MIT",
   "keywords": [
     "stackline",
+    "npm-package",
+    "unified-engine",
+    "typescript",
+    "nodejs",
     "unified",
     "processor",
     "engine",
@@ -91,7 +95,7 @@
     "semi": false,
     "trailingComma": "none"
   },
-  "homepage": "https://github.com/alexandroit/stackline-unified-engine#readme",
+  "homepage": "https://alexandro.net/docs/vanilla/unified-engine/",
   "publishConfig": {
     "access": "public"
   },
