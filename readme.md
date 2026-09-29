@@ -11,7 +11,7 @@
 **[Issues](https://github.com/alexandroit/stackline-unified-engine/issues)** |
 **[Repository](https://github.com/alexandroit/stackline-unified-engine)**
 
-**Package version:** `1.0.1`
+**Package version:** `1.0.2`
 
 ## Why this package?
 
@@ -49,7 +49,7 @@ You can use this to make such things.
 
 | Item | Value |
 | --- | --- |
-| Package | `@stackline/unified-engine@1.0.1` |
+| Package | `@stackline/unified-engine@1.0.2` |
 | Supported Node.js | `^20.19.0 || >=22.12.0` |
 | Module entry | `index.js` (ES modules) |
 | Runtime dependencies | 22 direct dependencies |

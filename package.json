@@ -1,6 +1,6 @@
 {
   "name": "@stackline/unified-engine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Process files with unified plugins, configuration, and ignore rules using the unified-engine 10 callback API",
   "license": "MIT",
   "keywords": [
@@ -42,36 +42,36 @@
     "UPSTREAM-TYPES.md"
   ],
   "dependencies": {
-    "@types/concat-stream": "^2.0.0",
+    "@types/concat-stream": "npm:@stackline/types-concat-stream@1.0.0",
     "@types/debug": "^4.0.0",
-    "@types/is-empty": "^1.0.0",
+    "@types/is-empty": "npm:@stackline/types-is-empty@1.0.0",
     "@types/node": "^18.0.0",
-    "@types/unist": "^2.0.0",
-    "concat-stream": "^2.0.0",
-    "debug": "^4.0.0",
-    "fault": "^2.0.0",
+    "@types/unist": "npm:@stackline/types-unist@1.0.0",
+    "concat-stream": "npm:@stackline/concat-stream@1.0.0",
+    "debug": "npm:@stackline/debug@1.0.0",
+    "fault": "npm:@stackline/fault@1.0.0",
     "glob": "^13.0.6",
     "ignore": "^5.0.0",
-    "is-buffer": "^2.0.0",
-    "is-empty": "^1.0.0",
-    "is-plain-obj": "^4.0.0",
-    "parse-json": "^6.0.0",
-    "to-vfile": "^7.0.0",
-    "trough": "^2.0.0",
-    "unist-util-inspect": "^7.0.0",
-    "vfile-message": "^3.0.0",
-    "vfile-reporter": "^7.0.0",
-    "vfile-statistics": "^2.0.0",
+    "is-buffer": "npm:@stackline/is-buffer@1.0.0",
+    "is-empty": "npm:@stackline/is-empty@1.0.0",
+    "is-plain-obj": "npm:@stackline/is-plain-obj@1.0.0",
+    "parse-json": "npm:@stackline/parse-json@1.0.0",
+    "to-vfile": "npm:@stackline/to-vfile@1.0.0",
+    "trough": "npm:@stackline/trough@1.0.0",
+    "unist-util-inspect": "npm:@stackline/unist-util-inspect@1.0.0",
+    "vfile-message": "npm:@stackline/vfile-message@1.0.0",
+    "vfile-reporter": "npm:@stackline/vfile-reporter@1.0.0",
+    "vfile-statistics": "npm:@stackline/vfile-statistics@1.0.0",
     "yaml": "^2.0.0",
-    "@stackline/load-plugin": "^1.0.0"
+    "@stackline/load-plugin": "1.0.2"
   },
   "devDependencies": {
-    "remark": "^14.0.0",
+    "remark": "npm:@stackline/remark@1.0.0",
     "strip-ansi": "^7.0.0",
-    "unified": "^10.0.0",
-    "vfile": "^5.0.0",
-    "vfile-reporter-json": "^3.0.0",
-    "vfile-reporter-pretty": "^6.0.0",
+    "unified": "npm:@stackline/unified@1.0.0",
+    "vfile": "npm:@stackline/vfile@1.0.0",
+    "vfile-reporter-json": "npm:@stackline/vfile-reporter-json@1.0.0",
+    "vfile-reporter-pretty": "npm:@stackline/vfile-reporter-pretty@1.0.0",
     "typescript": "7.0.2"
   },
   "scripts": {
@@ -80,7 +80,8 @@
     "test-api": "node --conditions development test/index.js",
     "lint": "node --check lib/finder.js",
     "prepack": "npm run build",
-    "test:types": "tsc -p test/tsconfig.types.json"
+    "test:types": "tsc -p test/tsconfig.types.json",
+    "test:package": "node scripts/test-package.mjs"
   },
   "prettier": {
     "tabWidth": 2,
