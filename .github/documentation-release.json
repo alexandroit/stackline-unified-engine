@@ -4,7 +4,7 @@
     {
       "name": "@stackline/unified-engine",
       "path": "readme.md",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "baselineVersion": "1.0.2",
       "keywords": [
         "stackline",
@@ -23,8 +23,8 @@
       "homepage": "https://alexandro.net/docs/vanilla/unified-engine/",
       "baselineTarball": "https://registry.npmjs.org/@stackline/unified-engine/-/unified-engine-1.0.2.tgz",
       "baselineIntegrity": "sha512-s01Iq8yFxAsqgwJ+2c63GF5DSFUo3Ldd3KwaKs+Hjm8Q0f6X8Y6OgFTsWGpMLR/uy+HYzachu8yNGFIshHEh7g==",
-      "expectedSha512": "004e42bfd1a46e6b9d8c7627df8a460d5d6980a3cd54c924c097a3151315bbd8b73f01b059d7c89324123c28aeac8e10e3a80ad1a0488ac8e24af9ae83197f05",
-      "tag": "docs-stackline-unified-engine-v1.0.3"
+      "expectedSha512": "17067921502bd16837c8f60515ec6393bb67893be5061847756d505264a174e1b545660eb9723b9add0c15c1c2ab84d278beb71539a7b714a8653a9500e21d15",
+      "tag": "docs-stackline-unified-engine-v1.0.4"
     }
   ]
 }

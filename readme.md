@@ -4,13 +4,13 @@
 
 [![npm version](https://img.shields.io/npm/v/@stackline/unified-engine.svg?style=flat-square)](https://www.npmjs.com/package/@stackline/unified-engine)
 [![license](https://img.shields.io/npm/l/@stackline/unified-engine.svg?style=flat-square)](https://github.com/alexandroit/stackline-unified-engine)
-[![GitHub repository](https://img.shields.io/badge/GitHub-alexandroit%2Fstackline-unified-engine-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-unified-engine)
+[![GitHub repository](https://img.shields.io/badge/GitHub-repository-181717?style=flat-square&logo=github)](https://github.com/alexandroit/stackline-unified-engine)
 [![Docs](https://img.shields.io/badge/docs-alexandro.net-0f766e?style=flat-square)](https://alexandro.net/docs/vanilla/unified-engine/)
 [![Reddit community](https://img.shields.io/badge/community-r%2FStackline-ff4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/Stackline/)
 
 **[Documentation](https://alexandro.net/docs/vanilla/unified-engine/)** | **[npm](https://www.npmjs.com/package/@stackline/unified-engine)** | **[Issues](https://github.com/alexandroit/stackline-unified-engine/issues)** | **[Repository](https://github.com/alexandroit/stackline-unified-engine)**
 
-**Current package version:** `1.0.3`
+**Current package version:** `1.0.4`
 
 ---
 
@@ -50,7 +50,7 @@ You can use this to make such things.
 
 | Item | Value |
 | --- | --- |
-| Package | `@stackline/unified-engine@1.0.3` |
+| Package | `@stackline/unified-engine@1.0.4` |
 | Supported Node.js | `^20.19.0 || >=22.12.0` |
 | Module entry | `index.js` (ES modules) |
 | Runtime dependencies | 22 direct dependencies |

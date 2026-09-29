@@ -1,6 +1,6 @@
 {
   "name": "@stackline/unified-engine",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Process files with unified plugins, configuration, and ignore rules using the unified-engine 10 callback API",
   "license": "MIT",
   "keywords": [
