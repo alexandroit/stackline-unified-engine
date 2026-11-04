@@ -54,7 +54,7 @@
     "concat-stream": "npm:@stackline/concat-stream@1.0.0",
     "debug": "npm:@stackline/debug@1.0.0",
     "fault": "npm:@stackline/fault@1.0.0",
-    "glob": "^13.0.6",
+    "glob": "^14.0.3",
     "ignore": "^5.0.0",
     "is-buffer": "npm:@stackline/is-buffer@1.0.0",
     "is-empty": "npm:@stackline/is-empty@1.0.0",
@@ -67,7 +67,7 @@
     "vfile-reporter": "npm:@stackline/vfile-reporter@1.0.0",
     "vfile-statistics": "npm:@stackline/vfile-statistics@1.0.0",
     "yaml": "^2.0.0",
-    "@stackline/load-plugin": "1.0.2"
+    "@stackline/load-plugin": "1.0.5"
   },
   "devDependencies": {
     "remark": "npm:@stackline/remark@1.0.0",
