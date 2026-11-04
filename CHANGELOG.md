@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5 - 2026-11-04
+
+- Upgrade glob to 14.0.3 and adopt the published load-plugin security update, preserving the callback API. Refresh the remaining Stackline dependencies and validate the published README.
+
 ## 1.0.2 - 2026-09-28
 
 - Replace stale direct runtime and development dependencies with verified Stackline maintenance forks, preserving existing import names and compatibility tests.

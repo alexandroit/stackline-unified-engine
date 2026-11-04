@@ -1,6 +1,6 @@
 {
   "name": "@stackline/unified-engine",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Process files with unified plugins, configuration, and ignore rules using the unified-engine 10 callback API",
   "license": "MIT",
   "keywords": [
@@ -46,36 +46,36 @@
     "UPSTREAM-TYPES.md"
   ],
   "dependencies": {
-    "@types/concat-stream": "npm:@stackline/types-concat-stream@1.0.0",
+    "@types/concat-stream": "npm:@stackline/types-concat-stream@1.0.2",
     "@types/debug": "^4.0.0",
-    "@types/is-empty": "npm:@stackline/types-is-empty@1.0.0",
+    "@types/is-empty": "npm:@stackline/types-is-empty@1.0.2",
     "@types/node": "^18.0.0",
-    "@types/unist": "npm:@stackline/types-unist@1.0.0",
-    "concat-stream": "npm:@stackline/concat-stream@1.0.0",
-    "debug": "npm:@stackline/debug@1.0.0",
-    "fault": "npm:@stackline/fault@1.0.0",
-    "glob": "^13.0.6",
+    "@types/unist": "npm:@stackline/types-unist@1.0.2",
+    "concat-stream": "npm:@stackline/concat-stream@1.0.2",
+    "debug": "npm:@stackline/debug@1.0.5",
+    "fault": "npm:@stackline/fault@1.0.3",
+    "glob": "^14.0.3",
     "ignore": "^5.0.0",
-    "is-buffer": "npm:@stackline/is-buffer@1.0.0",
-    "is-empty": "npm:@stackline/is-empty@1.0.0",
-    "is-plain-obj": "npm:@stackline/is-plain-obj@1.0.0",
-    "parse-json": "npm:@stackline/parse-json@1.0.0",
-    "to-vfile": "npm:@stackline/to-vfile@1.0.0",
-    "trough": "npm:@stackline/trough@1.0.0",
-    "unist-util-inspect": "npm:@stackline/unist-util-inspect@1.0.0",
-    "vfile-message": "npm:@stackline/vfile-message@1.0.0",
-    "vfile-reporter": "npm:@stackline/vfile-reporter@1.0.0",
-    "vfile-statistics": "npm:@stackline/vfile-statistics@1.0.0",
+    "is-buffer": "npm:@stackline/is-buffer@1.0.2",
+    "is-empty": "npm:@stackline/is-empty@1.0.3",
+    "is-plain-obj": "npm:@stackline/is-plain-obj@1.0.3",
+    "parse-json": "npm:@stackline/parse-json@1.0.4",
+    "to-vfile": "npm:@stackline/to-vfile@1.0.2",
+    "trough": "npm:@stackline/trough@1.0.2",
+    "unist-util-inspect": "npm:@stackline/unist-util-inspect@1.0.2",
+    "vfile-message": "npm:@stackline/vfile-message@1.0.2",
+    "vfile-reporter": "npm:@stackline/vfile-reporter@1.0.2",
+    "vfile-statistics": "npm:@stackline/vfile-statistics@1.0.2",
     "yaml": "^2.0.0",
-    "@stackline/load-plugin": "1.0.2"
+    "@stackline/load-plugin": "1.0.5"
   },
   "devDependencies": {
-    "remark": "npm:@stackline/remark@1.0.0",
+    "remark": "npm:@stackline/remark@1.0.2",
     "strip-ansi": "^7.0.0",
-    "unified": "npm:@stackline/unified@1.0.0",
-    "vfile": "npm:@stackline/vfile@1.0.0",
-    "vfile-reporter-json": "npm:@stackline/vfile-reporter-json@1.0.0",
-    "vfile-reporter-pretty": "npm:@stackline/vfile-reporter-pretty@1.0.0",
+    "unified": "npm:@stackline/unified@1.0.3",
+    "vfile": "npm:@stackline/vfile@1.0.2",
+    "vfile-reporter-json": "npm:@stackline/vfile-reporter-json@1.0.2",
+    "vfile-reporter-pretty": "npm:@stackline/vfile-reporter-pretty@1.0.2",
     "typescript": "7.0.2"
   },
   "scripts": {
@@ -101,5 +101,8 @@
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
+  },
+  "overrides": {
+    "minimatch@>=7 <11.0.4": "11.0.4"
   }
 }
